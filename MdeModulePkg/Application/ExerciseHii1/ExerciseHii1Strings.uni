@@ -1,0 +1,23 @@
+// /** @file
+// Sample UEFI Application Reference EDKII Module.
+//
+// This is a sample shell application that will print "UEFI Hello World!" to the
+// UEFI Console based on PCD setting.
+//
+// It demos how to use EDKII PCD mechanism to make code more flexible.
+//
+// Copyright (c) 2016, Intel Corporation. All rights reserved.<BR>
+//
+// SPDX-License-Identifier: BSD-2-Clause-Patent
+//
+// **/
+
+/=#
+
+#langdef en-US "English"
+#langdef fr-FR "Français"
+
+#string STR_HELLO_UNICODE_STRING                #language en-US "Hello Unicode String\n"
+                                                #language fr-FR "Bonjour chaîne Unicode\n"
+#string STR_UNKNOWN_STRING                      #language en-US "Error: Unknown String!\n"
+                                                #language fr-FR "Erreur: chaîne inconnue!\n"
