@@ -366,6 +366,7 @@
   EmulatorPkg/EmuSnpDxe/EmuSnpDxe.inf
 
   MdeModulePkg/Application/HelloWorld/HelloWorld.inf
+  MdeModulePkg/Application/Exercise1A/Exercise1A.inf
 
   MdeModulePkg/Universal/SmbiosDxe/SmbiosDxe.inf
   MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe.inf
