@@ -2,6 +2,8 @@
 #include <Library/UefiLib.h>
 #include <Library/UefiApplicationEntryPoint.h>
 
+#include <Library/BasicMathLib.h>
+
 /**
   The user Entry Point for Application. The user code starts with this function
   as the real entry point for the application.
@@ -20,7 +22,12 @@ UefiMain (
   IN EFI_SYSTEM_TABLE  *SystemTable
   )
 {
+  UINTN Z;
+  
   Print (L"Ths is Exercise 1-A\n");
+
+  Z = BasicMathAddI(3, 4);
+  Print (L"AddI(), Z = %d\n", Z);
 
   return EFI_SUCCESS;
 }

@@ -1,10 +1,10 @@
 [Defines]
   INF_VERSION                    = 0x00010005
-  BASE_NAME                      = Exercise1A
-  FILE_GUID                      = 59E344FD-F4C6-47C8-B6F3-F6CA0EC7BD92
-  MODULE_TYPE                    = UEFI_APPLICATION
+  BASE_NAME                      = BasicMathLib
+  FILE_GUID                      = 6E7834C2-3B81-4DBB-9A7A-82D5DD2E6018
+  MODULE_TYPE                    = DXE_DRIVER
   VERSION_STRING                 = 1.0
-  ENTRY_POINT                    = UefiMain
+  LIBRARY_CLASS                  = BasicMathLib|DXE_DRIVER UEFI_APPLICATION
 
 #
 # The following information is for reference only and not required by the build tools.
@@ -13,14 +13,15 @@
 #
 
 [Sources]
-  Exercise1A.c
+  BasicMathLib.c
 
 [Packages]
   MdePkg/MdePkg.dec
   MdeModulePkg/MdeModulePkg.dec
   TrainingPkg/TrainingPkg.dec
-
+  
 [LibraryClasses]
-  UefiApplicationEntryPoint
   UefiLib
-  BasicMathLib
+  
+[Protocols]
+

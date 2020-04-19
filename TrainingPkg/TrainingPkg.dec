@@ -1,0 +1,21 @@
+[Defines]
+  DEC_VERSION                    = 0x00010005
+  PACKAGE_NAME                   = TrainingPkg
+  PACKAGE_GUID                   = 5F8AE77A-E4CE-4FB8-B214-C4D27AE34A1A
+  PACKAGE_VERSION                = 0.1
+
+[Includes]
+  Include
+
+[LibraryClasses]
+
+[Protocols]
+
+[Guids]
+
+[PcdsFeatureFlag]
+
+[PcdsFixedAtBuild]
+
+[PcdsFixedAtBuild, PcdsPatchableInModule]
+
