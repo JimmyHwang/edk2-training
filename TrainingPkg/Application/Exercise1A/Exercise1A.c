@@ -1,8 +1,9 @@
 #include <Uefi.h>
 #include <Library/UefiLib.h>
 #include <Library/UefiApplicationEntryPoint.h>
-
+#include <Library/UefiBootServicesTableLib.h>
 #include <Library/BasicMathLib.h>
+#include <Protocol/TextDrawProtocol.h>
 
 /**
   The user Entry Point for Application. The user code starts with this function
@@ -22,12 +23,17 @@ UefiMain (
   IN EFI_SYSTEM_TABLE  *SystemTable
   )
 {
-  UINTN Z;
+  EFI_STATUS Status;
+  TEXT_DRAW_PROTOCOL *TextDraw;
   
   Print (L"Ths is Exercise 1-A\n");
-
-  Z = BasicMathAddI(3, 4);
-  Print (L"AddI(), Z = %d\n", Z);
-
+  
+  Status = gBS->LocateProtocol (&gTextDrawProtocolGuid, NULL, (VOID **)&TextDraw);
+  if (!EFI_ERROR (Status)) {
+    TextDraw->DrawRectangle (0, 0, 10, 10, L"*");
+  } else {
+    Print (L"Error: TextDraw Protocol locate failed\n");
+  }
+  
   return EFI_SUCCESS;
 }

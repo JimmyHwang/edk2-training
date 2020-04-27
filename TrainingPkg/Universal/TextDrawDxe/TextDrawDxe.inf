@@ -1,0 +1,42 @@
+## @file
+#  TextDraw DXE driver that produces TextDraw Protocols.
+#
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = TextDrawDxe
+  FILE_GUID                      = 07D72B4E-0587-4266-9473-3EC4F2AA3F73
+  MODULE_TYPE                    = DXE_DRIVER
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = TextDrawEntryPoint
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+#  VALID_ARCHITECTURES           = IA32 X64 EBC
+#
+
+[Sources]
+  TextDrawDxe.c
+
+[Packages]
+  MdeModulePkg/MdeModulePkg.dec
+  MdePkg/MdePkg.dec
+  TrainingPkg/TrainingPkg.dec
+
+[LibraryClasses]
+  UefiLib
+  PrintLib
+  UefiBootServicesTableLib
+  UefiDriverEntryPoint    
+  DebugLib  
+
+[Protocols]
+  gTextDrawProtocolGuid    ## PRODUCES
+
+[Depex]
+  TRUE
+
+[UserExtensions.TianoCore."ExtraFiles"]
+#  PrintDxeExtra.uni

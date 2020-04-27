@@ -23,4 +23,8 @@
 [LibraryClasses]
   UefiApplicationEntryPoint
   UefiLib
+  UefiBootServicesTableLib
   BasicMathLib
+
+[Protocols]
+  gTextDrawProtocolGuid    ## PRODUCES

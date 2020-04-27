@@ -416,6 +416,8 @@
 
 !include NetworkPkg/Network.dsc.inc
 
+  TrainingPkg/Universal/TextDrawDxe/TextDrawDxe.inf
+
 [BuildOptions]
   #
   # Disable deprecated APIs.
