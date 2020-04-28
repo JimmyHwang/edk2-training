@@ -202,6 +202,7 @@ INF  ShellPkg/DynamicCommand/TftpDynamicCommand/TftpDynamicCommand.inf
 INF  ShellPkg/Application/Shell/Shell.inf
 
 INF  TrainingPkg/Universal/TextDrawDxe/TextDrawDxe.inf
+INF  TrainingPkg/Universal/SimpleTickDxe/SimpleTickDxe.inf
 
 [Rule.Common.SEC]
   FILE SEC = $(NAMED_GUID)  {

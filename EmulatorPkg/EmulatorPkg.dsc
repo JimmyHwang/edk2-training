@@ -417,6 +417,7 @@
 !include NetworkPkg/Network.dsc.inc
 
   TrainingPkg/Universal/TextDrawDxe/TextDrawDxe.inf
+  TrainingPkg/Universal/SimpleTickDxe/SimpleTickDxe.inf
 
 [BuildOptions]
   #
