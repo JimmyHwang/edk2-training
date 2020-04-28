@@ -30,7 +30,7 @@ UefiMain (
   
   Status = gBS->LocateProtocol (&gTextDrawProtocolGuid, NULL, (VOID **)&TextDraw);
   if (!EFI_ERROR (Status)) {
-    TextDraw->DrawRectangle (0, 0, 10, 10, L"*");
+    TextDraw->DrawRectangle (10, 10, L"*");    
   } else {
     Print (L"Error: TextDraw Protocol locate failed\n");
   }

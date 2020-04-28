@@ -13,8 +13,6 @@ STATIC EFI_HANDLE  mTextDrawHandle = NULL;
 /**
   Draw a text rectangle on screen 
 
-  @param  X           Position-X
-  @param  Y           Position-Y
   @param  Width       Width of rectangle
   @param  Height      Height of rectangle
   @param  Character   Special character to draw
@@ -25,8 +23,6 @@ STATIC EFI_HANDLE  mTextDrawHandle = NULL;
 EFI_STATUS
 EFIAPI
 TextDrawRectangle (
-  IN  UINTN X,            // Unsupported yet
-  IN  UINTN Y,            // Unsupported yet
   IN  UINTN Width,
   IN  UINTN Height,
   IN  CHAR16 *Character
@@ -48,8 +44,50 @@ TextDrawRectangle (
   return Status;
 }
 
+/**
+  Draw a text triangle on screen 
+
+  @param  Height      Height of rectangle
+  @param  Character   Special character to draw
+
+  @retval EFI_SUCCESS   Run successful
+
+**/
+EFI_STATUS
+EFIAPI
+TextDrawTriangle (
+  IN  UINTN Height,
+  IN  CHAR16 *Character
+  )
+{
+  EFI_STATUS Status;
+  UINTN H;
+  UINTN W;
+  UINTN Width;
+  UINTN Spaces;
+  
+  Status = EFI_SUCCESS;
+  Spaces = Height;
+  Width = 1;
+  
+  for (H=0; H<Height; H++) {
+    for (W=0; W<Spaces; W++) {
+      Print(L" ");
+    }
+    for (W=0; W<Width; W++) {
+      Print(Character);
+    }
+    Print(L"\n");
+    Width += 2;
+    Spaces -= 1;
+  }
+  
+  return Status;
+}
+
 CONST TEXT_DRAW_PROTOCOL mTextDrawProtocol = {
-  TextDrawRectangle
+  TextDrawRectangle,
+  TextDrawTriangle  
 };
 
 /**
