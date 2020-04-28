@@ -63,7 +63,7 @@ SimpleTickTimerHandler (
   // Trigger tick event per second
   //
   if ((SimpleTickData->Seconds % 3) == 0) {
-    //gBS->SignalEvent (SimpleTickData->TickEvent);
+    gBS->SignalEvent (SimpleTickData->TickEvent);
   }
 }
 
