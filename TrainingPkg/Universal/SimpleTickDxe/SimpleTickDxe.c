@@ -16,7 +16,7 @@ SimpleTickEventHandler (
 
   SimpleTickData = (SIMPLE_TICK_PRIVATE_DATA *) Context;
   SimpleTickData->Ticks++;
-  DEBUG ((EFI_D_ERROR, "Info: SimpleTickEventHandler, Ticks=%d\n", SimpleTickData->Ticks));
+  //DEBUG ((EFI_D_ERROR, "Info: SimpleTickEventHandler, Ticks=%d\n", SimpleTickData->Ticks));
 }
 
 VOID 
