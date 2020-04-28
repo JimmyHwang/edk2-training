@@ -28,8 +28,9 @@
 [LibraryClasses]
   UefiLib
   PrintLib
+  MemoryAllocationLib
   UefiBootServicesTableLib
-  UefiDriverEntryPoint    
+  UefiDriverEntryPoint 
   DebugLib  
 
 [Protocols]
