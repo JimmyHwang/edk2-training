@@ -228,7 +228,7 @@ formset
     disableif ideqval MyIfrNVData.SuppressGrayOutSomething == 0x2;
       orderedlist
         varid       = MyIfrNVData.OrderedList,
-        prompt      = STRING_TOKEN(STR_TEST_OPCODE),
+        prompt      = STRING_TOKEN(STR_ORDERED_LIST_TEXT),
         help        = STRING_TOKEN(STR_TEXT_HELP),
         flags       = RESET_REQUIRED,
         option text = STRING_TOKEN(STR_ONE_OF_TEXT1), value = 3, flags = 0;

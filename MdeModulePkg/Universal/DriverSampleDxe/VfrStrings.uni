@@ -189,6 +189,8 @@
                                        #language fr-FR "This is my Spanish inventory text1 string"
 #string STR_INVENTORY_TEXT2            #language en-US "This is my English inventory text2 string"
                                        #language fr-FR "This is my Spanish inventory text2 string"
+#string STR_ORDERED_LIST_TEXT          #language en-US "Ordered List"
+                                       #language fr-FR "Ordered List"
 #string STR_TEST_OPCODE                #language en-US "Pick 1"
                                        #language fr-FR "Pick 1"
 #string STR_TEST_OPCODE2               #language en-US "Pick 2"
