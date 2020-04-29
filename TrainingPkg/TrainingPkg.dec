@@ -20,4 +20,3 @@ gSimpleTickEventGuid          = { 0x42e2758a, 0xde06, 0x429e, { 0xbc, 0x78, 0x31
 [PcdsFixedAtBuild]
 
 [PcdsFixedAtBuild, PcdsPatchableInModule]
-
