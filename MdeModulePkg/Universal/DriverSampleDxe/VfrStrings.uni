@@ -51,6 +51,8 @@
                                        #language fr-FR "Check the input number, test the efi buffer varstore"
 #string STR_ONE_OF_PROMPT              #language en-US "My one-of prompt #1"
                                        #language fr-FR "Mi uno- de guía # 1"
+#string STR_ONE_OF_PROMPT2             #language en-US "My one-of prompt #2"
+                                       #language fr-FR "Mi uno- de guía # 2"
 #string STR_ONE_OF_PROMPT_KEYWORD      #language en-US "My Keyword Namespace Test"
                                        #language fr-FR "My Keyword Namespace Test"
                                        #language x-UEFI-ns "iSCSIBootEnable"

@@ -167,7 +167,7 @@ formset
     endoneof;
 
     oneof varid  = MyIfrNVData.BootOrderLarge,
-      prompt      = STRING_TOKEN(STR_ONE_OF_PROMPT),
+      prompt      = STRING_TOKEN(STR_ONE_OF_PROMPT2),
       help        = STRING_TOKEN(STR_ONE_OF_HELP),
       default value = cond (pushthis == 0 ? 0 : cond ((questionref(MyOneOf) >> 0x4 & 0xF00) == 0x0 + 0x2 ? 0 : 1)),
       option text = STRING_TOKEN(STR_BOOT_ORDER1), value = 0x0, flags = 0;
