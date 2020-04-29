@@ -21,7 +21,6 @@
 #langdef en-US "English"
 #langdef fr-FR "Francais"
 
-
 #string STR_INV_FORM_SET_TITLE         #language en-US  "ABC Information Sample"
                                        #language fr-FR  "Mi motor Español de arreglo"
 #string STR_INV_FORM_SET_HELP          #language en-US  "The ABC Network Controller version information, which includes Firmware versions as well as supported characteristics"
